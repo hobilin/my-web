@@ -122,13 +122,17 @@ object-position: right;
 
 .fa-bars {
   color: #fff;
+  font-size: 1.5em;
   border: 0.09em solid #fff;
   padding: 0.2em;
   border-radius: 3px;
-  margin-left: 19em;
-  margin-top: 0.4em;
-  display: none!important;
-}
+  text-align: right;
+  }
+
+  .menu-h {
+    display: none!important;
+
+  }
 
 #img1 {
   background-image: url(../img/imgheader.jpg);
@@ -272,6 +276,50 @@ footer {
   margin-top: 1.5em;
   font-size: 1em;
 }
+@media (min-width: 1115px) and (max-width: 1299px) {
+  #fst-box, #scnd-box, #thrd-box {
+    width: 35%;
+  }
+  #thrd-box{
+    margin-left: 10em;
+  }
+}
+
+@media (max-width: 1114px) and (min-width: 827px) {
+  #fst-box, #scnd-box, #thrd-box {
+    width: 40%;
+  }
+  #thrd-box{
+    margin-left: 9.3em;
+  }
+}
+
+@media (max-width: 826px) and (min-width: 451px)  {
+  #fst-box, #scnd-box, #thrd-box {
+    width: 100%;
+  }
+
+
+  #scnd-box, #thrd-box, #brave, #nature {
+    margin-left: 4em;
+  }
+
+  #space-nat {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1199px){
+  .hide-after{
+    display: none!important;
+    }
+
+  .menu-h {
+    display: block!important;
+  }
+}
+
 
 @media (max-width: 450px) {
 
@@ -280,13 +328,6 @@ footer {
     font-weight: 400;
   }
 
-  .hide-after{
-    display: none!important;
-    }
-
-  .fa-bars {
-    display: block!important;
-  }
 
   #nature, #brave {
     width: 100%;
